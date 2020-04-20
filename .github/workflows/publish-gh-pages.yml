@@ -36,12 +36,12 @@ jobs:
           mkdir gh-pages
           cd gh-pages
           git init
-          git remote add origin https://github.com/chenhaihong/www-tiiit-cn.git
+          git pull https://github.com/chenhaihong/www-tiiit-cn.git gh-pages ./
       - name: 拷贝代码并发布
         run: |
           cd gh-pages
           cp -r ../dist/* .
           git add .
           git commit -m "build: deploy documentation"
-          git push -f origin gh-pages
+          git push -f origin/gh-pages
       # - run: curl ${{ secrets.WEB_HOOK_API }}
