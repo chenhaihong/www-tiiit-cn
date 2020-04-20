@@ -13,11 +13,11 @@ $ yarn
 Start the dev server,
 
 ```bash
-$ npm start
+$ yarn start
 ```
 
 Build site app,
 
 ```bash
-$ npm run build
+$ yarn build
 ```

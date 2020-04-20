@@ -1,9 +1,11 @@
 name: publish-gh-pages
 
-on:
-  push:
-    branches:
-      - master
+on: push
+
+# on:
+#   push:
+#     branches:
+#       - master
 
 jobs:
   publish:
