@@ -1,0 +1,43 @@
+name: publish-gh-pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish:
+    strategy:
+      matrix:
+        node-version: [10]
+        os: [macOS-latest]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@master
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@master
+        with:
+          node-version: ${{ matrix.node-version }}
+          os: ${{ matrix.os }}
+      - run: git config --global user.name "chenhaihong"
+      - run: git config --global user.email "erye@tiiit.cn"
+      # - run: npm i -g yarn
+      - run:
+          echo "machine github.com login chenhaihong password ${{ secrets.GH_TOKEN }}" >
+          ~/.netrc
+      - run: |
+        yarn install
+        yarn build
+      - run: |
+        mkdir gh-pages
+        cd gh-pages
+        git init
+        git remote add origin https://github.com/chenhaihong/www-tiiit-cn.git
+        cp -r ../dist/* .
+      - run: |
+        git add .
+        git commit --am -m "build: deploy documentation"
+        git push -f origin gh-pages
+      # - run: curl ${{ secrets.WEB_HOOK_API }}
