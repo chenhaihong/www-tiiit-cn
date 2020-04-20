@@ -35,8 +35,7 @@ jobs:
         run: |
           mkdir gh-pages
           cd gh-pages
-          git init
-          git pull https://github.com/chenhaihong/www-tiiit-cn.git gh-pages ./
+          git clone https://github.com/chenhaihong/www-tiiit-cn.git gh-pages ./
       - name: 拷贝代码并发布
         run: |
           cd gh-pages
