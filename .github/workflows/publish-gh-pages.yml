@@ -23,19 +23,24 @@ jobs:
           os: ${{ matrix.os }}
       - run: git config --global user.name "chenhaihong"
       - run: git config --global user.email "erye@tiiit.cn"
-      - run:
+      - name: 登录
+        run:
           echo "machine github.com login chenhaihong password ${{ secrets.GH_TOKEN }}" >
           ~/.netrc
-      - run: |
+      - name: 安装依赖，然后构建
+        run: |
           yarn install
           yarn build
-      - run: |
+      - name: git初始化
+        run: |
           mkdir gh-pages
           cd gh-pages
           git init
           git remote add origin https://github.com/chenhaihong/www-tiiit-cn.git
+      - name: 拷贝代码并发布
+        run: |
+          cd gh-pages
           cp -r ../dist/* .
-      - run: |
           git add .
           git commit --am -m "build: deploy documentation"
           git push -f origin gh-pages
