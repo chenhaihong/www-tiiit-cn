@@ -1,6 +1,10 @@
 {
   "private": true,
-  "name": "dumi-app",
+  "name": "www-tiiit-cn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chenhaihong/www-tiiit-cn"
+  },
   "scripts": {
     "start": "dumi dev",
     "build": "dumi build",

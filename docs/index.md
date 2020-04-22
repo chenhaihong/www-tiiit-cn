@@ -1,5 +1,5 @@
 ---
-title: 首页 | 陈海宏
+title: Home | 陈海宏
 hero:
   title: 陈海宏
   desc: Web FE at Guangzhou
@@ -28,14 +28,22 @@ footer:
 
 ```js
 import React, { Component } from 'react';
-import { Time } from 'Time';
-import { withChinaIsGettingBetter } from 'ChinaHook';
-import { withIAmGettingBetter } from 'IHook';
+import { Time } from 'time';
+import { withChinaCtx, useBetterChina } from 'chinaHook';
+import { withICtx, useBetterMe } from 'iHook';
 
-export default function TimeIsGoing() {
-  const { chinaProps } = withChinaIsGettingBetter();
-  const { iProps } = withIAmGettingBetter();
+function TimeIsGoing() {
+  const { chinaProps } = useBetterChina();
+  const { iProps } = useBetterMe();
 
   return <Time {...chinaProps} {...iProps} />;
+}
+
+@withChinaCtx
+@withICtx
+export default class App extends Component {
+  render() {
+    return <TimeIsGoing />;
+  }
 }
 ```
