@@ -39,7 +39,7 @@ jobs:
       - name: 拷贝代码并发布
         run: |
           cd gh-pages
-          rm -rf ./
+          rm -v !(.|..|.git)
           cp -r ../dist/* .
           git add .
           git commit -m "build: deploy documentation"
