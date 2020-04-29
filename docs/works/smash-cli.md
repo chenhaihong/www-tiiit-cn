@@ -7,8 +7,6 @@ nav:
 
 # smash-cli
 
-一个简单的任务管理工具，可以用来快速配置开发任务。
+一个简单的任务管理工具，可以用来快速配置开发任务，[https://www.smash-cli.com/](https://www.smash-cli.com/)
 
-- [仓库](https://github.com/chenhaihong/smash-cli)
-- [文档](https://www.smash-cli.com/docs/documentation/getting-started/what-is-smash-cli.html)
-- [示例](https://www.smash-cli.com/docs/examples/usage/using-a-template.html)
+仓库地址：[Github](https://github.com/chenhaihong/smash-cli)
