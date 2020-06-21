@@ -1,5 +1,5 @@
 ---
-order: 900000
+order: 2500
 nav:
   title: 作品
   order: 9

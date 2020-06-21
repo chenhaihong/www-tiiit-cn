@@ -7,7 +7,7 @@ export default defineConfig({
   },
   favicon: 'https://tiiit-cn.oss-cn-shenzhen.aliyuncs.com/favicon.ico',
   hash: true,
-  logo: 'logo',
+  logo: 'https://tiiit-cn.oss-cn-shenzhen.aliyuncs.com/logo.jpeg',
   locales: [['zh-CN', '中文']],
   mode: 'site',
   // 单语言配置方式如下
