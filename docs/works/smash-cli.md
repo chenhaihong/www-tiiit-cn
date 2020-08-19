@@ -9,7 +9,7 @@ nav:
 
 一个小巧的任务管理工具，可以用来快速配置开发任务，
 
-- 文档：[https://www.smash-cli.com/](https://www.smash-cli.com/)
+- 文档：[https://smash.tiiit.cn/](https://smash.tiiit.cn/)
 - 代码仓库：[https://github.com/chenhaihong/smash-cli](https://github.com/chenhaihong/smash-cli)
 
 ## 使用示例
