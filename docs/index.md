@@ -7,15 +7,13 @@ hero:
     - text: 作品
       link: /works
 
-# features:
-#   - title: smash-cli
-#     desc: A tiny task manager for JavaScript projects
-#   - title: mese
-#     desc: 一个简易的 react ssr 框架
-#   - title: 地图lite
-#     desc: 一个地图小程序
-#   - title: VS Code Lite
-#     desc: 一个 Chrome 扩展，提供阅读代码、编辑代码等功能。
+features:
+  - title: 阡阡路惠
+    desc: 17 年在益车益路写的一个 web 管理平台，使用的 vue 全家桶。[查看](https://qqlh.tiiit.cn/)
+  - title: 地图lite
+    desc: 一个地图小程序，用的 uni + uniCloud。
+  - title: smash-cli
+    desc: 一个小巧的任务管理工具，可以用来快速配置开发任务，[查看](https://smash.tiiit.cn/)
 
 footer:
   本网站属于个人技术分享网站，使用 [dumi](https://d.umijs.org) 工具构建生成，是一个纯静态网站<br />
@@ -23,10 +21,7 @@ footer:
   [粤公网安备 44011302002141号](http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44011302002141)
 ---
 
-<br/>
-<br/>
-
-```js
+<!-- ```js
 import React, { Component } from 'react';
 import { Time } from 'time';
 import { withChinaCtx, useBetterChina } from 'chinaHook';
@@ -46,4 +41,4 @@ export default class App extends Component {
     return <TimeIsGoing />;
   }
 }
-```
+``` -->

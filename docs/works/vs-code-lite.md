@@ -1,5 +1,5 @@
 ---
-order: 2500
+order: 25000
 nav:
   title: 作品
   order: 9
@@ -15,4 +15,4 @@ nav:
 - [monaco editor](https://microsoft.github.io/monaco-editor/)
 - Promisify web worker
 
-<img src="https://tiiit-cn.oss-cn-shenzhen.aliyuncs.com/images/works/vs-code-lite.jpg" style="margin-top: 20px; border:1px solid #ccc;" title="VS Code Lite" alt="VS Code Lite" />
+<img src="https://tiiit-cn.oss-cn-shenzhen.aliyuncs.com/images/works/vs-code-lite.jpg" style="margin-top: 20px; max-width: 600px; border:1px solid #ccc;" title="VS Code Lite" alt="VS Code Lite" />
